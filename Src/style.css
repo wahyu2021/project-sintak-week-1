@@ -1,0 +1,230 @@
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #faf0d0;
+}
+
+/* logo */
+.logo{
+    transition: all .3s ease-in-out;
+}
+
+.logo:hover{
+    scale: 1.1;
+    transform: rotate(20deg);
+}
+
+.title-toko {
+    color: #615520;
+    font-family: "Pacifico", cursive;
+    font-size: 40px;
+}
+
+.navbar{
+    background-color: #B09B71;
+    box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+
+}
+
+.nav-item{
+    transition: all .3s ease-in-out;
+    font-size: 1.25rem;
+    color: #3b3826;
+}
+
+.nav-link{
+    color: #fcfcfc;
+}
+
+.nav-item:hover{
+    background-color: #EDDFB3;
+    color: black;
+}
+
+.btn-search{
+    outline: 1px solid #EDDFB3;
+    color: #fcfcfc;
+    border: none;
+    background-color: transparent;
+    padding: 4px 18px;
+    transition: all .3s ease-in-out;
+    border-radius: 8px;
+}
+
+.btn-search:hover{
+    background-color: #EDDFB3;
+    color: #3b3826;
+}
+
+.btn:active{
+    scale: 0.95;
+}
+
+.form-control:focus {
+    outline: 5px solid #EDDFB3;
+}
+
+.carousel{
+    padding: 8px 8px 8px 8px;
+}
+
+.carousel-inner{
+    border-radius: 24px;
+    box-shadow: 0px 7px 8px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 7px 8px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 7px 8px 0px rgba(0,0,0,0.75);
+}
+
+.menu{
+    box-sizing: border-box;
+    margin: 20px 0 30px 0;
+}
+
+.text-menu{
+    margin-top: 50px;
+    
+}
+
+.text-menu > a {
+    font-size: 50px;
+    color: #615520;
+    transition: all .3s ease-in-out;
+    background-color: #EDDFB3;
+    padding: 2px 34px;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0px 7px 8px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 7px 8px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 7px 8px 0px rgba(0,0,0,0.75);
+}
+
+.text-menu > a:hover {
+    background-color: #ffd23f;
+}
+
+.card{
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 7px 8px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 7px 8px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 7px 8px 0px rgba(0,0,0,0.75);
+}
+.card:hover{
+    scale: 1.05;
+    outline: 5px solid #EDDFB3;
+    z-index: 99;
+}
+
+.card-text{
+    font-size: 14px;
+}
+
+.menu > .row > .col > .card > .img {
+    height: 150px;
+}
+.menu > .row > .col > .card {
+    height: 350px;
+    box-sizing: border-box;
+}
+
+.about-us {
+    margin: 20px 0 20px 0;
+    
+}
+
+.about-us > .card:hover{
+    scale: 1;
+    outline: none;
+}
+
+.deskripsi-toko > .penjelasan {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.toko{
+    background-color: rgba(0, 0, 0, .1);
+    width: 90%;
+    box-shadow: 0px 7px 8px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 7px 8px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 7px 8px 0px rgba(0,0,0,0.75);
+}
+
+.logo-toko > img {
+    width: 400px;
+    height: 400px;
+}
+
+.judul{
+    font-family: "Pacifico", cursive;
+}
+
+.footer{
+    background-color: #B09B71;
+}
+
+.maps{
+    max-width:100%;
+    overflow:hidden;
+    color:red;
+    width:400px;
+    height:400px;
+}
+
+/* breakpoint */
+
+@media screen and (max-width: 576px) {
+    .carousel-item > img{
+        height: 15vh;
+    }
+
+    .carousel{
+        padding: 8px 0px 0px 0px;
+    }
+
+    .carousel-inner{
+        border-radius: 0px;
+    }
+    
+    .text-menu > a {
+        font-size: 30px;
+        color: #615520;
+        background-color: #EDDFB3;
+        padding: 2px 34px;
+        border-radius: 12px;
+    }
+
+    .logo-toko > img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .judul{
+        font-size: 24px;
+    }
+    
+    .toko{
+        width: 90%;
+    }
+
+    .deskripsi-toko > .penjelasan {
+        text-align: justify;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .maps{
+        width: 200px;
+        height: 150px;
+    }
+    
+  }
